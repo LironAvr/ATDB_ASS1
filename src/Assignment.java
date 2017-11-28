@@ -68,11 +68,11 @@ public class Assignment {
         }
 
         catch(IOException ioex){
-            System.out.println("Oops, youre file could not be opened\\n[Exception Stack Trace]: " + ioex.getStackTrace());
+            System.out.println("Oops, youre file could not be opened\\n[Exception Stack Trace]: " + ioex.getMessage());
         }
 
         catch(Exception ex){
-            System.out.println("Oh snap!, We encountered an error..\\n[Exception Stack Trace]: " + ex.getStackTrace());
+            System.out.println("Oh snap!, We encountered an error..\\n[Exception Stack Trace]: " + ex.getMessage());
         }
 
         finally{
@@ -84,7 +84,7 @@ public class Assignment {
             }
 
             catch(Exception ex){
-                System.out.println("Oh man...somthing bad happened, somthing REAL bad...\\n[Exception Stack Trace]: " + ex.getStackTrace());
+                System.out.println("Oh man...somthing bad happened, somthing REAL bad...\\n[Exception Stack Trace]: " + ex.getMessage());
             }
         }
     }
@@ -125,7 +125,7 @@ public class Assignment {
         }
 
         catch (Exception ex){
-            System.out.println("Something went wrong...\n[Exception]: " + ex.getStackTrace());
+            System.out.println("Something went wrong...\n[Exception]: " + ex.getMessage());
         }
 
         finally{
@@ -136,7 +136,7 @@ public class Assignment {
             }
 
             catch (Exception ex){
-                System.out.println("An error! oh no!\n[Exception]: " + ex.getStackTrace());
+                System.out.println("An error! oh no!\n[Exception]: " + ex.getMessage());
             }
         }
     }
@@ -161,7 +161,7 @@ public class Assignment {
         }
 
         catch(Exception ex){
-            System.out.println("You tried retrieving the similar titles, but something went wrong...\n[Exception]: " + ex.getStackTrace());
+            System.out.println("You tried retrieving the similar titles, but something went wrong...\n[Exception]: " + ex.getMessage());
         }
 
         finally {
@@ -171,7 +171,7 @@ public class Assignment {
                 if(null != driver) driver.close();
             }
             catch (Exception ex){
-                System.out.println("Your'e no gonna believe it, an error!\n[Exception]: " + ex.getStackTrace());
+                System.out.println("Your'e no gonna believe it, an error!\n[Exception]: " + ex.getMessage());
             }
         }
     }
